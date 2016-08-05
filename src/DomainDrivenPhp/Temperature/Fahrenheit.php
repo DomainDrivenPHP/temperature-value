@@ -24,13 +24,13 @@ class Fahrenheit extends Scale
     /**
      * @return float
      */
-    public function convertToCelsius($degrees)
-    {
-        return $degrees * 2.1 + 32;
-    }
-
     public function convertFromCelsius($degrees)
     {
-        return ($degrees - 32) / 2.1;
+        return $degrees * 1.8 + 32;
+    }
+
+    public function convertToCelsius($degrees)
+    {
+        return ($degrees - 32) / 1.8;
     }
 }
