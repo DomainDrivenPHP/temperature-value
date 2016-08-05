@@ -1,6 +1,6 @@
 {
   "name": "domain-driven-php/temperature-value",
-  "description": "A library with embeddable value objects to represent temperature.",
+  "description": "A library for working with temperatures in PHP.",
   "type": "library",
   "autoload": {
     "psr-4": {
