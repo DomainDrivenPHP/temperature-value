@@ -34,6 +34,18 @@ class TemperatureTest extends \PHPUnit\Framework\TestCase
         new Temperature($temperature, $scale);
     }
 
+    /**
+     * @param Temperature $temp1
+     * @param Temperature $temp2
+     * @param Temperature $result
+     *
+     * @dataProvider addTemperaturesProvider
+     */
+    public function testAdd($temp1, $temp2, $result)
+    {
+        $this->assertEquals($result, $temp1->add($temp2));
+    }
+
     public static function instantiateProvider()
     {
         return [
@@ -50,6 +62,17 @@ class TemperatureTest extends \PHPUnit\Framework\TestCase
         return [
             [true, new Kelvin()],
             ['s', new Celsius()],
+        ];
+    }
+
+    public function addTemperaturesProvider()
+    {
+        $f = new Fahrenheit();
+        $c = new Celsius();
+
+        return [
+            [new Temperature(45, $f), new Temperature(12.5, $f), new Temperature(57.5, $f)],
+            [new Temperature(-23, $f), new Temperature(40, $f), new Temperature(17, $f)],
         ];
     }
 }
