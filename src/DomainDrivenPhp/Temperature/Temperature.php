@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bryanagee
- * Date: 8/5/16
- * Time: 1:08 AM
- */
 
 namespace DomainDrivenPhp\Temperature;
 

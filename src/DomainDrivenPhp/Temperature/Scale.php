@@ -1,13 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bryanagee
- * Date: 8/5/16
- * Time: 1:35 AM
- */
 
 namespace DomainDrivenPhp\Temperature;
 
+use DomainDrivenPhp\Temperature\ValueObjects\Celsius;
+use DomainDrivenPhp\Temperature\ValueObjects\Fahrenheit;
+use DomainDrivenPhp\Temperature\ValueObjects\Kelvin;
 
 /**
  * Interface Scale

@@ -1,17 +1,16 @@
 <?php
 
 namespace DomainDrivenPhp\Temperature;
-/**
- * Created by PhpStorm.
- * User: bryanagee
- * Date: 8/5/16
- * Time: 1:42 AM
- */
-class TemperatureTest extends \PHPUnit\Framework\TestCase
+
+use DomainDrivenPhp\Temperature\ValueObjects\Celsius;
+use DomainDrivenPhp\Temperature\ValueObjects\Fahrenheit;
+use DomainDrivenPhp\Temperature\ValueObjects\Kelvin;
+
+class TemperatureTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @param $temperature
-     * @param $scale
+     * @param $scaleStr
      *
      * @dataProvider instantiateProvider
      */
@@ -19,7 +18,7 @@ class TemperatureTest extends \PHPUnit\Framework\TestCase
     {
         $scale = Scale::getFromString($scaleStr);
         $temperature = new Temperature($temperature, $scale);
-        $this->assertInstanceof('\DomainDrivenPhp\Temperature\Temperature', $temperature);
+        $this->assertInstanceOf('\DomainDrivenPhp\Temperature\Temperature', $temperature);
     }
 
     /**

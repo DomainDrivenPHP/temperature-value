@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bryanagee
- * Date: 8/5/16
- * Time: 3:15 AM
- */
 
 namespace DomainDrivenPhp\Temperature;
 
+use DomainDrivenPhp\Temperature\ValueObjects\Fahrenheit;
 
 class FahrenheitTest extends \PHPUnit_Framework_TestCase
 {
