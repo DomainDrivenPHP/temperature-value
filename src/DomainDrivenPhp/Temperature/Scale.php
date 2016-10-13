@@ -50,6 +50,6 @@ abstract class Scale
                 return new Kelvin();
         }
 
-        throw new \Exception(sprintf('Temperature scale not recognized: %s'));
+        throw new \Exception(sprintf('Temperature scale not recognized: %s', $scale));
     }
 }
