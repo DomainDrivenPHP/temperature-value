@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bryanagee
- * Date: 8/5/16
- * Time: 2:03 AM
- */
 
-namespace DomainDrivenPhp\Temperature;
+namespace DomainDrivenPhp\Temperature\ValueObjects;
 
+use DomainDrivenPhp\Temperature\Scale;
 
 class Celsius extends Scale
 {

@@ -1,12 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Bryan J. Agee
- * Date: 8/5/16
- */
 
-namespace DomainDrivenPhp\Temperature;
+namespace DomainDrivenPhp\Temperature\ValueObjects;
 
+use DomainDrivenPhp\Temperature\Scale;
 
 class Fahrenheit extends Scale
 {

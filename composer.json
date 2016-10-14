@@ -17,5 +17,8 @@
       "email": "bryan@pamiris.com"
     }
   ],
-  "require": {}
+  "require": {},
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  }
 }
