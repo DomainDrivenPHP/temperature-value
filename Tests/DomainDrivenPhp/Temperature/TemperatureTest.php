@@ -71,7 +71,7 @@ class TemperatureTest extends \PHPUnit_Framework_TestCase
 
         return [
             [new Temperature(45, $f), new Temperature(12.5, $f), new Temperature(57.5, $f)],
-            [new Temperature(-23, $f), new Temperature(40, $f), new Temperature(17, $f)],
+            [new Temperature(-23, $c), new Temperature(40, $c), new Temperature(17, $c)],
         ];
     }
 }
