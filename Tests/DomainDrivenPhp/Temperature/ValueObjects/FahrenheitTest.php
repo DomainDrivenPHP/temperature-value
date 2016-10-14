@@ -53,4 +53,9 @@ class FahrenheitTest extends \PHPUnit_Framework_TestCase
             [40, 104],
         ];
     }
+
+    protected function tearDown()
+    {
+        unset($this->fahrenheit);
+    }
 }
